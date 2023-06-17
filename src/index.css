@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container{
+  @apply mx-auto max-w-[60vw] mt-4;
+}
+
+.title{
+  @apply font-bold text-xl tracking-normal text-black capitalize;
+}
+
+.box-form-child{
+  @apply flex flex-col items-start justify-center gap-1;
+}
+
+.label-form{
+  @apply text-black tracking-tight font-medium text-base leading-4;
+}
+
+.btn {
+  @apply flex rounded py-2 px-6 cursor-pointer font-semibold transition border border-transparent ring-transparent shadow-transparent leading-4 items-center justify-center gap-6 shrink-0;
+}
+
+.btn.primary{
+  @apply bg-blue-500 text-white hover:bg-white hover:border-blue-500 hover:text-blue-500;
+}
+
+.btn.secondary{
+  @apply hover:border-black;
+}
+
+.input-text{
+  @apply p-2 w-full outline-none border border-solid rounded shadow-transparent focus:shadow-input focus:border-input;
+}
+
+.card{
+  @apply flex flex-col items-center justify-center gap-2 h-full w-full max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100;/*dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700*/
+}
+
+.card:hover, .card:focus{
+  translate: 0 -5px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0,0,.2);
+}
+
+.tag {
+  @apply text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-pink-600 bg-pink-200 uppercase last:mr-0 mr-1
+}
+
+.modal-container{
+  @apply fixed w-screen h-screen bg-[#0004] flex items-center justify-center inset-0 z-50 py-8 px-16;
+}
+
+.modal-container .modal-wrapper{
+  @apply m-auto bg-white flex flex-col items-center h-min rounded w-[60vw] transform gap-6; 
+}
+
+.item-tag{
+  @apply border rounded flex items-center py-4 pl-2 w-full;
+}
+
+
+/*Preview Markdown*/
+.preview h1{
+  padding-top: 20px;
+  font-size: 2.5rem;
+}
+
+.preview h2{
+  font-size: 2rem;
+}
+
+.preview h3{
+  font-size: 1.75rem;
+}
+
+.preview h4{
+  font-size: 1.5rem;
+}
+
+.preview h5{
+  font-size: 1.25rem;
+}
+
+.preview h6{
+  font-size: 1rem;
+}
+
+.preview p{
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.preview b, strong{
+  font-weight: bold;
+}
+
+.preview em {
+  font-style: italic;
+}
+
+.preview h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 0;
+}
