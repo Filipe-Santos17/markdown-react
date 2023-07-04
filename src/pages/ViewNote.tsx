@@ -3,6 +3,7 @@ import Title from "../components/Title"
 import Button from "../components/Button"
 import { Link, useNavigate } from "react-router-dom"
 import { ReactMarkdown } from "react-markdown/lib/react-markdown"
+import { useEffect } from "react"
 
 export default function ViewNote({ onDel }: { onDel: (id: string) => void }) {
   const note = useNote()
@@ -12,7 +13,10 @@ export default function ViewNote({ onDel }: { onDel: (id: string) => void }) {
     onDel(note.id)
     navigate('/')
   }
-  //Forma de fazer com que ao digitar o markdown possa ver o resultado final
+
+  useEffect(() => {
+    document.title = "View Note"
+  }, [])
 
   return (
     <>
