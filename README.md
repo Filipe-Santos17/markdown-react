@@ -1,12 +1,12 @@
 # Markdown-React
 
-## :four_leaf_clover: Technologies used
-
 <h2 align="center">
   <img alt="Preview" title="Preview" src="./public/preview.png" />
 </h2>
 
-For see more about the project, please click in the [link]()
+For see more about the project, please click in the [link](https://github.com/Filipe-Santos17/markdown-react/blob/main/public/videos/video-example.mp4)
+
+## :four_leaf_clover: Technologies used
 
 This project is being developed with the following technologies.
 
